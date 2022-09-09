@@ -1,0 +1,17 @@
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	amend = commit --amend --no-edit
+	pup = "!f() { git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD); }; f" 
+	ds = diff --staged
+	cim = commit -m
+	undo = reset HEAD^1
+	rs = restore --staged
+[user]
+	email = henrikland@gmail.com
+	name =Henrik Persson
+[pager]
+	diff = true
+	branch = true
